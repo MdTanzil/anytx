@@ -12,14 +12,14 @@ import Trusted from "@/components/Trusted";
 export default function Home() {
   return (
     <div className="overflow-x-hidden">
+      {/* className="overflow-x-hidden" */}
       {/* Wrap Navbar and Hero in a relative container */}
-      <div className="relative">
+      <div className="relative ">
         {/* Background container */}
         <FloatingSvg />
         <Navbar />
         <Hero />
       </div>
-
       {/* Other sections */}
       <Finance />
       <Innovation />

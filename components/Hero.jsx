@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className=" overflow-hidden bg-[#005bc4] mt-25 min-h-[600px] clip-polygon  inset-0  ">
+    <div className={` bg-[#005bc4] pt-24 min-h-[600px] clip-polygon    `}>
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 ">
         <div className="grid items-center pt-10 grid-cols-1 gap-12 lg:grid-cols-2">
           <div className="min-h-full clip-card">
@@ -14,11 +14,11 @@ const Hero = () => {
               Reimagine financial services with AnyTech’s open platform,
               distributed banking solution that powers transformation
             </p>
-            <div className="mt-10 sm:flex sm:items-center sm:space-x-8">
+            <div className="mt-10 cursor-pointer sm:flex sm:items-center sm:space-x-8">
               <a
                 href="#"
                 title
-                className="inline-flex rounded-sm items-center justify-center px-10 py-4 text-base font-semibold text-white transition-all duration-200 bg-[#fe8b53] hover:bg-orange-500 focus:bg-orange-500  z-40"
+                className="inline-flex cursor-pointer rounded-sm items-center justify-center px-10 py-4 text-base font-semibold text-white transition-all duration-200 bg-[#fe8b53] hover:bg-orange-500 focus:bg-orange-500  z-40"
                 role="button"
               >
                 Reach Out To Us

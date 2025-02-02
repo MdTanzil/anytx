@@ -49,7 +49,7 @@ const Trusted = () => {
       <h4 className="text-center text-lg text-primary font-extrabold montserrat-font">
         TRUSTED BY THE BEST
       </h4>
-      <div className="mt-8 flex justify-evenly max-w-[600px] mx-auto">
+      <div className="mt-8 flex justify-evenly max-w-[600px] mx-auto flex-col sm:flex-row ">
         <div>
           <Counter
             from={0}

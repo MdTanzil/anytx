@@ -12,7 +12,7 @@ const Footer = () => {
         </div>
 
         {/* Navigation Links */}
-        <div className="flex space-x-6 text-cyan-400">
+        <div className="flex flex-col sm:flex-row space-x-6 text-cyan-400">
           <a href="#" className="font-semibold">
             Our Solutions
           </a>

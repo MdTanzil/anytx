@@ -49,3 +49,9 @@ body {
 /* .clip-image {
   clip-path: polygon(62% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 50%);
 } */
+
+.dropdown-menu {
+  z-index: 9999; /* Ensure the dropdown is above other content */
+  max-height: 90vh; /* Prevent it from exceeding the screen height */
+  overflow-y: auto; /* Make the dropdown scrollable if content overflows */
+}

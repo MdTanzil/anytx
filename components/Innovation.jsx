@@ -8,7 +8,7 @@ const Innovation = () => {
         Human-centred innovation
       </h1>
       <img className="mt-8" src="/Assets/fig.png" alt="" />
-      <div className="mt-10  grid grid-cols-3 gap-4">
+      <div className="mt-10 grid-cols-1 grid md:grid-cols-3 gap-4">
         <div className="card bg-[#f8fcff] shadow-none rounded-lg sm:max-w-sm">
           <div className="card-body">
             <div>

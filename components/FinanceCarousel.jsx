@@ -104,11 +104,11 @@ const FinanceCarousel = () => {
   return (
     <div className="relative w-full p-6">
       {/* Navigation Buttons */}
-      <div className="flex justify-center space-x-4 ">
+      <div className="flex justify-center space-x-0 md:space-x-4 ">
         {slides.map((slide, index) => (
           <button
             key={index}
-            className={`px-8 py-4 text-blue-700 font-semibold rounded-full transition duration-300 ${
+            className={`md:px-8 md:py-4 px-1 py-1 text-blue-700 font-semibold rounded-full text-sm md:text-md transition duration-300 ${
               index === currentSlide ? "bg-blue-200" : "hover:bg-blue-200"
             }`}
             onClick={() => handleButtonClick(index)}
@@ -133,7 +133,7 @@ const FinanceCarousel = () => {
         <div className="carousel mt-4 h-[400px] md:h-[550px]">
           {/* Carousel Body */}
           <div
-            className="carousel-body relative h-full w-full flex transition-transform duration-300 ease-in-out"
+            className="carousel-body max-h-full relative h-full w-full flex transition-transform duration-300 ease-in-out"
             style={{
               transform: `translateX(calc(-${
                 currentSlide * 100
@@ -142,20 +142,20 @@ const FinanceCarousel = () => {
           >
             {slides.map((slide, index) => (
               <div
-                className="card sm:card-side max-w-md sm:max-w-full shadow-xl p-12 "
+                className="card sm:card-side max-w-md sm:max-w-full shadow-xl md:p-12 p-12 "
                 key={index}
               >
-                <div className="card-body gap-x-4">
+                <div className="card-body md:gap-x-4 gap-x-2">
                   <h3 className="montserrat-font text-primary text-lg font-semibold">
                     {slide.title}
                   </h3>{" "}
-                  <h1 className="text-4xl text-[#0b305b] mt-6 font-montserrat montserrat-font font-medium :text-6xl lg:text-7xl">
+                  <h1 className="text-4xl text-[#0b305b] mt-6 font-montserrat montserrat-font font-medium md:text-6xl lg:text-7xl">
                     {slide.heading}
                   </h1>{" "}
                   <p className="mt-8 text-lg font-semibold text-[#164377] sm:text-xl">
                     {slide.description}
                   </p>{" "}
-                  <p className="mt-8 text-md font-light text-[#164377] sm:text-xl">
+                  <p className="mt-8 text-md font-light text-[#164377] sm:text-lg">
                     {slide.subDescription}
                   </p>
                 </div>
